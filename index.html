@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="encabezado">
+        <h1 class="encabezado__titulo">Clientes</h1>
+    </header>
+    <main class="contendorClientes">
+        <section class="tablaClientes">
+            <div class="tablaClientes__botones">
+                <div class="Buscador">
+                    <input type="search" class="inputBuscar" placeholder="Nombre, Nit o CC">
+                    <span class="material-symbols-outlined">search</span>
+                </div>
+                <button class="Crear_Cliente" id="CrearCliente">Crear cliente</button>
+            </div>
+            <div class="tablaClientes__tabla">
+                <table class="tabla">
+                    <tr class="encabezadoTabla">
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>NIT/CC</th>
+                        <th>Dirección</th>
+                        <th>Ciudad</th>
+                        <th>Telefono</th>
+                        <th>Cupo disponible</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>Cardenas</td>
+                        <td>91280223</td>
+                        <td>CLL 35 32 85</td>
+                        <td>Bucaramanga</td>
+                        <td>315 374 3455</td>
+                        <td>$85.000.000</td>
+                        <td>Activo</td>
+                        <td>
+                            <span class="material-symbols-outlined">person_add</span>
+                            <span class="material-symbols-outlined">delete</span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+    </main>
+    
+    
+
+
+
+
+    <!-- Modal -->
+    <div class="Modal" id="Modal">
+        <header class="encabezado">
+            <h2 class="encabezado__titulo2">Clientes</h2>
+        </header>
+        <div class="contenedorAtras">
+            <button class="btn" id="atras">Atras</button>
+        </div>
+        <div class="ContenedorDatosPersonales">
+            <p class="ContenedorDatosPersonales__titulo">Datos personales</p>
+            <div class="formulario">
+
+                <div class="formulario__informacion1">
+                    <div class="ContenedorInputs">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" id="Nombre" class="inputNombre" placeholder="Nombre">
+                    </div>
+                    <div class="ContenedorInputs">
+                        <label for="Nit/CC">Nit/CC</label>
+                        <input type="text" class="inputNitCC" id="Nit/CC" placeholder="Nit/CC">
+                    </div>
+                    <div class="ContenedorInputs">
+                        <label for="ciudad">Ciudad</label>
+                        <select class="ciudad" name="ciudad" id="ciudad">
+                            <option value="1">Selecionar...</option>
+                            <option value="2">Bucaramanga</option>
+                            <option value="3">Medellin</option>
+                        </select>
+                    </div>
+                    <div class="ContenedorInputs">
+                        <label for="contacto">Contacto</label>
+                        <input type="text" class="inputContacto" id="contacto" placeholder="Contacto">
+                    </div>
+                    <div class="Contedorbtn">
+                        <button class="Contedorbtn__btn">Guardar cambios</button>
+                    </div>
+                </div>
+
+                <div class="formulario__informacion2">
+                    <div class="ContenedorInputs">
+                        <label for="apellidos">Apellidos</label>
+                        <input type="text" id="apellidos" placeholder="Apellido" class="InputApellidos">
+                    </div>
+                    <div class="ContenedorInputs">
+                        <label for="Direccion">Dirección</label>
+                        <input type="text" placeholder="Dirección" class="inputDireccion" id="Direccion">
+                    </div>
+                    <div class="ContenedorInputs">
+                        <label for="telefono">Teléfono</label>
+                        <input type="text" placeholder="Teléfono" id="telefono" class="inputTelefono">
+                    </div>
+                </div>
+                <div class="formulario__informacion3">
+                    <div class="ContenedorInputs">
+                        <label for="cupo_total">Cupo total</label>
+                        <input type="text" id="cupo_total" class="inputCupoTotal" placeholder="Cupo total">
+                    </div>
+                    <div class="ContenedorInputs">
+                        <label for="Cupo_disponible">Cupo disponible</label>
+                        <input type="text" id="Cupo_disponible" class="inputCupoDisponible" placeholder="Cupo disponible">
+                    </div>
+                    <div class="ContenedorInputs">
+                        <label for="Dias_de_gracias">Dias de gracias</label>
+                        <input type="text" id="Dias_de_gracias" class="inputDiasDeGracias" placeholder="Dias de gracias">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
